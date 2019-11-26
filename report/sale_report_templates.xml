@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inmeza_report_sale_order_document" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+            <t t-call="web.basic_layout">
+                <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
+                <div class="header">
+                    <img src='/inmeza_invoice/static/img/header.png' style="width:100%;"/>
+                </div>
+
+                <div class="page" style="padding-top: 100px;">
+                    <table class="table_header">
+                        <tr>
+                            <th colspan="3">CLIENTE</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <span t-field="doc.partner_id.name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>COTIZACION No.</th>
+                            <th>FECHA</th>
+                            <th>ASESOR</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span t-field="doc.name"/>
+                            </td>
+                            <td>
+                                <span t-field="doc.date_order"/>
+                            </td>
+                            <td>
+                                <span t-field="doc.user_id"/>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="table_products">
+                        <tr>
+                            <th>PART</th>
+                            <th>MARCA</th>
+                            <th>MODELO</th>
+                            <th>DESCRIPCION</th>
+                            <th>CANT</th>
+                            <th>P. UNIT</th>
+                            <th>TOTAL</th>
+                        </tr>
+                        <t t-set="i" t-value="0"/>
+                        <t t-foreach="doc.order_line" t-as="line">
+                            <t t-set="i" t-value="i+1"/>
+                            <tr>
+                                <td>
+                                    <span t-esc="i"/>
+                                </td>
+                                <td>
+                                    <!-- TODO <span t-field="line.brand"/> -->
+                                </td>
+                                <td>
+                                    <span t-field="line.product_id.default_code"/>
+                                    <br/>
+                                    <img t-attf-src="data:image/*;base64,{{line.product_id.image}}"/>
+                                </td>
+                                <td class="description">
+                                    <h1 t-field="line.product_id.name"/>
+                                    <p t-field="line.name"/>
+                                </td>
+                                <td>
+                                    <span t-field="line.product_uom_qty"/>
+                                </td>
+                                <td>
+                                    <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
+                                </td>
+                                <td>
+                                    <span t-field="line.price_subtotal"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </table>
+                </div>
+
+                <div class="amounts">
+                    <table>
+                        <tr>
+                            <th>SUBTOTAL</th>
+                            <td>
+                                <span t-field="doc.amount_untaxed"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>I.V.A.</th>
+                            <td>
+                                <span t-field="doc.amount_tax"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL</th>
+                            <td>
+                                <span t-field="doc.amount_total"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="footer">
+                    <img src='/inmeza_invoice/static/img/footer.png' style="width:100%;"/>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

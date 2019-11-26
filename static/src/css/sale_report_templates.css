@@ -1,0 +1,70 @@
+.table_header  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    text-align:center;
+    vertical-align:middle;
+    margin-bottom: 20px;
+}
+.table_header td{
+}
+.table_header th{
+    color: #112A75;
+    font-weight:bold;
+    /* TODO rem border-bottom */
+    background-color: #CECECC;
+}
+
+.table_products  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    text-align:center;
+    vertical-align:middle;
+}
+/* TODO :vertical */
+.table_products td{
+    border-style: solid;
+    border-color: #112A75;
+}
+.description{
+    text-align: left;
+}
+.table_products img{
+    width:50%;
+}
+.table_products td h1{
+    font-size: medium;
+    color: #112A75;
+    font-weight: bold;
+}
+.table_products th{
+    color: white;
+    font-weight:bold;
+    background-color: #112A75;
+}
+
+.amounts {
+    padding-top: 30px;
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    vertical-align:middle;
+    text-align: right;
+    border-style: solid;
+}
+.amounts table {
+    float: right;
+    width: 50%;
+}
+.amounts th{
+    width: 50%;
+    color: white;
+    font-weight:bold;
+    background-color: #112A75;
+    border-color: white;
+}
+.amounts td{
+    width: 50%;
+    border-color: #112A75;
+}
