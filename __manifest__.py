@@ -8,6 +8,7 @@
     'category': 'Operations',
     'depends': [
         'point_of_sale',
+        'sale',
     ],
     'data': [
         'report/sale_report_templates.xml',

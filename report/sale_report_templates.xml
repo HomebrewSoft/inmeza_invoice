@@ -4,11 +4,8 @@
         <xpath expr="//t[@t-call='web.external_layout']" position="replace">
             <t t-call="web.basic_layout">
                 <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
-                <div class="header">
-                    <img src='/inmeza_invoice/static/img/header.png' style="width:100%;"/>
-                </div>
-
-                <div class="page" style="padding-top: 100px;">
+                <div class="header"> <!-- TODO -->
+                    <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
                     <table class="table_header">
                         <tr>
                             <th colspan="3">CLIENTE</th>
@@ -35,7 +32,10 @@
                             </td>
                         </tr>
                     </table>
+                </div>
 
+                <div class="page" style="padding-top: 100px;">
+                    
                     <table class="table_products">
                         <tr>
                             <th>PART</th>
@@ -102,8 +102,11 @@
                     </table>
                 </div>
 
+                <!-- TODO notas -->
+
                 <div class="footer">
-                    <img src='/inmeza_invoice/static/img/footer.png' style="width:100%;"/>
+                    <img src="/inmeza_invoice/static/img/footer.png" style="width:100%;"/>
+                    <!-- TODO -->
                 </div>
             </t>
         </xpath>
