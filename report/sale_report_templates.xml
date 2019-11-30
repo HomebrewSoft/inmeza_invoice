@@ -6,7 +6,21 @@
                 <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
                 <div class="header"> <!-- TODO -->
                     <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
-                    <table class="table_header">
+                    <div class="blue-box">
+                        <div class="logo">
+                            <img src="/inmeza_invoice/static/img/logo.png" />
+                        </div>
+                        <div class="company-info">
+                            <p class="name">Compañía institucional de muebles de acero s.a. de c.v.</p>
+                            <p class="address">Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.</p>
+                            <p class="rfc"><span class="rfc__light">RFC: </span><span class="rfc__bold">ima9032823</span></p>
+                            <p class="url">www.servinox.com.mx</p>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <p>Restaurantes•Cafeterías•Panaderías•Carnicerías•Comida Rápida•Refrigeración•Cocción</p>
+                    </div>
+                    <table class="table-header">
                         <tr>
                             <th colspan="3">CLIENTE</th>
                         </tr>
@@ -35,8 +49,7 @@
                 </div>
 
                 <div class="page" style="padding-top: 100px;">
-                    
-                    <table class="table_products">
+                    <table class="table-products">
                         <tr>
                             <th>PART</th>
                             <th>MARCA</th>
@@ -77,36 +90,67 @@
                             </tr>
                         </t>
                     </table>
+
+                    <div class="amounts">
+                        <table>
+                            <tr class="top">
+                                <th>SUBTOTAL</th>
+                                <td>
+                                    <span t-field="doc.amount_untaxed"/>
+                                </td>
+                            </tr>
+                            <tr class="middle">
+                                <th>I.V.A.</th>
+                                <td>
+                                    <span t-field="doc.amount_tax"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>TOTAL</th>
+                                <td>
+                                    <span t-field="doc.amount_total"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="observations" style="padding-top: 100px;">
+                        <table class="table-header" style="page-break-after:always;">
+                            <tr>
+                                <th>observaciones</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p>*2Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-
-                <div class="amounts">
-                    <table>
-                        <tr>
-                            <th>SUBTOTAL</th>
-                            <td>
-                                <span t-field="doc.amount_untaxed"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>I.V.A.</th>
-                            <td>
-                                <span t-field="doc.amount_tax"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>TOTAL</th>
-                            <td>
-                                <span t-field="doc.amount_total"/>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!-- TODO notas -->
-
-                <div class="footer">
-                    <img src="/inmeza_invoice/static/img/footer.png" style="width:100%;"/>
-                    <!-- TODO -->
+                <div class="footer foot">
+                    <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
+                    <div class="foot-holder">
+                        <div class="footer-bg">
+                            <p class="name"><span class="bold">indelisa</span><span class="lighter">gaeta</span></p>
+                            <img src="/inmeza_invoice/static/img/sample.png" class="round" />
+                            <div class="bg">
+                                <p>
+                                    <img src="/inmeza_invoice/static/img/person_pin-24px.svg" class="ico" /> Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.    
+                                    <img src="/inmeza_invoice/static/img/logo.png" width="90px" class="ico" />
+                                </p>
+                                <p>
+                                    <img src="/inmeza_invoice/static/img/local_phone-24px.svg" class="ico" />
+                                    <span class="bold">(33)1580•9989</span>
+                                    <span class="lighter"> Ext. 152    </span>
+                                    <img src="/inmeza_invoice/static/img/local_post_office-24px.svg" class="ico" />
+                                    <span class="bold italic">indelisa_gaeta@servinox.com.mx</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </t>
         </xpath>

@@ -2,7 +2,7 @@
 
 {
     'name': 'Inmeza Invoice',
-    'version': '12.0.0.1.0',
+    'version': '12.0.0.2.0',
     'author': 'HomebrewSoft',
     'website': 'https://github.com/HomebrewSoft/inmeza_invoice',
     'category': 'Operations',
