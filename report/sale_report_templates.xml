@@ -8,7 +8,7 @@
                     <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
                     <div class="blue-box">
                         <div class="logo">
-                            <img src="/inmeza_invoice/static/img/logo.png" />
+                            <img src="/inmeza_invoice/static/img/index.jpg" />
                         </div>
                         <div class="company-info">
                             <p class="name">Compañía institucional de muebles de acero s.a. de c.v.</p>
@@ -139,7 +139,7 @@
                             <div class="bg">
                                 <p>
                                     <img src="/inmeza_invoice/static/img/person_pin-24px.svg" class="ico" /> Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.    
-                                    <img src="/inmeza_invoice/static/img/logo.png" width="90px" class="ico" />
+                                    <img src="/inmeza_invoice/static/img/index.jpg" width="90px" class="ico" />
                                 </p>
                                 <p>
                                     <img src="/inmeza_invoice/static/img/local_phone-24px.svg" class="ico" />

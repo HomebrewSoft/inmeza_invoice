@@ -1,5 +1,5 @@
 .blue-box {
-    background: #00307E;
+    background: #EB212D;
     color: #FFFFFF;
     width: 100%;
     display: table;
@@ -53,7 +53,7 @@
 }
 
 .services {
-    color: #00307E;
+    color: #EB212D;
     text-align: center;
     font-style: italic;
     width: 100%;
@@ -68,7 +68,7 @@
 }
 
 .table-header td, th {
-    border: 1px solid #00307E;
+    border: 1px solid #EB212D;
 }
 
 /* TODO: add pading in cells */
@@ -78,7 +78,7 @@
     padding: 1px;
 }
 .table-header th {
-    color: #112A75;
+    color: #EB212D;
     font-weight: bold;
     background-color: #CECECC;
     border-bottom: none;
@@ -95,14 +95,14 @@
 }
 
 .table-products table, td, th {
-    border: 1px solid #112A75;
+    border: 1px solid #EB212D;
 }
 
 .table-products th {
     text-transform: uppercase;
     color: white;
     font-weight:bold;
-    background-color: #112A75;
+    background-color: #EB212D;
 }
 
 .table-products td {
@@ -121,7 +121,7 @@
 
 .table-products td h1 {
     font-size: medium;
-    color: #112A75;
+    color: #EB212D;
     font-weight: bold;
 }
 
@@ -141,14 +141,14 @@
 .amounts table {
     float: right;
     width: 50%;
-    border: 1px solid #112A75;
+    border: 1px solid #EB212D;
 }
 .amounts th {
     width: 50%;
     color: white;
-    background: #112A75;
+    background: #EB212D;
     font-weight: bold;
-    border: 1px solid #112A75;
+    border: 1px solid #EB212D;
 }
 
 .amounts .top th {
@@ -162,7 +162,7 @@
 
 .amounts td {
     width: 50%;
-    border: 1px solid #112A75;
+    border: 1px solid #EB212D;
 }
 
 .observations {
@@ -204,7 +204,7 @@
 
 
 .footer-bg .bg {
-    background: #00307E;
+    background: #EB212D;
     border-radius: 10px;
     margin-top: -30px;
     margin-left: 102px;
@@ -240,7 +240,7 @@
 }
 
 .footer-bg .name {
-    color: #00307E;
+    color: #EB212D;
     font-size: 30px;
     text-transform: uppercase;
     margin-left: -220px;
