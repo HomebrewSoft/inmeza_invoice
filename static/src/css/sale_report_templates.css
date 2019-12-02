@@ -88,8 +88,7 @@
 .table-products {
     width: 100%;
     text-align: center;
-    padding-top: 75px;
-    border-collapse: separate; 
+    border-collapse: separate;
     display: table;
     border-spacing: 0 10px;
 }
@@ -246,16 +245,3 @@
     margin-left: -220px;
     padding-bottom: 5px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

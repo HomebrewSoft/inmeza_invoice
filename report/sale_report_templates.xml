@@ -4,7 +4,7 @@
         <xpath expr="//t[@t-call='web.external_layout']" position="replace">
             <t t-call="web.basic_layout">
                 <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
-                <div class="header"> <!-- TODO -->
+                <div class="header">                    <!-- TODO -->
                     <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
                     <div class="blue-box">
                         <div class="logo">
@@ -13,7 +13,10 @@
                         <div class="company-info">
                             <p class="name">Compañía institucional de muebles de acero s.a. de c.v.</p>
                             <p class="address">Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.</p>
-                            <p class="rfc"><span class="rfc__light">RFC: </span><span class="rfc__bold">ima9032823</span></p>
+                            <p class="rfc">
+                                <span class="rfc__light">RFC: </span>
+                                <span class="rfc__bold">ima9032823</span>
+                            </p>
                             <p class="url">www.servinox.com.mx</p>
                         </div>
                     </div>
@@ -48,7 +51,7 @@
                     </table>
                 </div>
 
-                <div class="page" style="padding-top: 100px;">
+                <div class="page">
                     <table class="table-products">
                         <tr>
                             <th>PART</th>
@@ -113,8 +116,9 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="observations" style="padding-top: 100px;">
-                        <table class="table-header" style="page-break-after:always;">
+                    <div style="page-break-after:always;"/>
+                    <div class="observations">
+                        <table class="table-header">
                             <tr>
                                 <th>observaciones</th>
                             </tr>
@@ -134,11 +138,15 @@
                     <link rel='stylesheet' href="/inmeza_invoice/static/src/css/sale_report_templates.css"/>
                     <div class="foot-holder">
                         <div class="footer-bg">
-                            <p class="name"><span class="bold">indelisa</span><span class="lighter">gaeta</span></p>
+                            <p class="name">
+                                <span class="bold">indelisa</span>
+                                <span class="lighter">gaeta</span>
+                            </p>
                             <img src="/inmeza_invoice/static/img/sample.png" class="round" />
                             <div class="bg">
                                 <p>
-                                    <img src="/inmeza_invoice/static/img/person_pin-24px.svg" class="ico" /> Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.    
+                                    <img src="/inmeza_invoice/static/img/person_pin-24px.svg" class="ico" />
+                                        Av. de la Paz 930-A, Zona Centro, C.P. 44100, Gdl., Jal.
                                     <img src="/inmeza_invoice/static/img/index.jpg" width="90px" class="ico" />
                                 </p>
                                 <p>
