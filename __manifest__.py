@@ -2,13 +2,13 @@
 
 {
     'name': 'Inmeza Invoice',
-    'version': '12.0.0.3.0',
+    'version': '12.0.0.4.0',
     'author': 'HomebrewSoft',
     'website': 'https://github.com/HomebrewSoft/inmeza_invoice',
     'category': 'Operations',
     'depends': [
         'point_of_sale',
-        'sale',
+        'sale_management',
     ],
     'data': [
         'report/sale_report_templates.xml',
